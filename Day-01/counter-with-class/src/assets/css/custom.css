@@ -1,0 +1,55 @@
+@font-face{
+    font-family: iranSans;
+    src: url("../fonts/IranianSans.ttf");
+}
+body{
+    font-family: iransans;
+background-image: linear-gradient(to left , #0a0a0a , #333333);
+}
+h1{
+    color: #fafeff;
+    text-align: center;
+    padding-top: 140px;
+}
+.displayCounter{
+    color: #fafeff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+button{
+    background-color: transparent;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.buttonarea{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 320px;
+}
+button[type= 'increase'] {
+    color: #27734d;
+    border: 1px solid #27734d;
+    
+}
+button[type= 'decrease'] {
+    color: #f8c31b;
+    border: 1px solid #f8c31b;
+   
+
+}
+button[type= 'reset'] {
+    color: #4a1bf8;
+    border: 1px solid #4a1bf8;
+    width: 350px;
+    align-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    justify-content: center;
+}
