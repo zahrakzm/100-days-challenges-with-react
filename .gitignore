@@ -3,6 +3,8 @@
 # dependencies
 /Day-01/counter-with-class/node_modules
 /Day-01/counter-with-function/node_modules
+/Day-02/random-num-with-class/node_modules
+/Day-02/random-num-with-function/node_modules
 /.pnp
 .pnp.js
 

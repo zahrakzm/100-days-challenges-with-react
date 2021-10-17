@@ -1,0 +1,58 @@
+@font-face{
+    font-family: 'iranSams';
+   src: url('../fonts/IranianSans.ttf');
+}
+body{
+    font-family: iranSans;
+}
+.box{
+    width: 400px;
+    height: 200px;
+    background: #015291;
+    margin: auto;
+    margin-top: 200px;
+}
+.box h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.random-num{
+    color:#FFF;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+hr{
+    color: #5f88a8;
+    margin-left: 10px;
+     margin-right: 10px;
+     
+}
+button{
+    display: flex;
+    background-color: #FFF;
+    border-radius: 5px;
+    height: 30px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size:15px;
+}
+.action{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 320px;
+    margin:  auto;
+    margin-top: 20px;
+}
+input{
+    width: 200px;
+    height: 30px;
+   border:1px solid #000;
+   border-radius: 5px;
+
+}
