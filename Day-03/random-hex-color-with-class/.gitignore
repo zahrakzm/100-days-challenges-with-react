@@ -1,13 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/Day-01/counter-with-class/node_modules
-/Day-01/counter-with-function/node_modules
-/Day-02/random-num-with-class/node_modules
-/Day-02/random-num-with-function/node_modules
-/Day-03/random-hex-color-with-class/node_modules
-/Day-03/random-hex-color-with-function/node_modules
-
+/node_modules
 /.pnp
 .pnp.js
 
