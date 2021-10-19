@@ -1,0 +1,52 @@
+@font-face{
+    font-family: 'iranSans';
+   src: url('../fonts/IranianSans.ttf');
+}
+body{
+    font-family: 'iranSans';
+    background-color: rgb(14, 26, 136);
+}
+.main >h1{
+    text-align: center;
+    color: #FFF;
+    padding-top: 150px;
+}
+h3{
+    text-align: center;
+    color: #FFF;
+}
+button{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    background: transparent;
+    color: #FFF;
+    border: 1px solid;
+    height: 30px;
+    width: 105px;
+    padding: 8px;
+    border-radius: 2px;
+    display: block
+}
+button:hover{
+    background-color: rgb(235 145 28);
+}
+.modal-rl-area{
+    display: flex;
+    flex-direction: row;
+    max-width: 230px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.modal-tb-area{
+    display: flex;
+    flex-direction: row;
+    max-width: 230px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+

@@ -1,0 +1,123 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+@keyframes modalFadeLeft {
+  0% {
+    left: 0;
+  }
+  50% {
+    right: 50;
+  }
+}
+
+.left {
+  position: fixed;
+  background: rgb(248, 248, 248);
+  width: 50%;
+  height: auto;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: modalFadeLeft;
+  animation-duration: 0.5s;
+}
+@keyframes modalFadeTop {
+  0% {
+    top: 0;
+  }
+  50% {
+    bottom: 50;
+  }
+}
+
+.top {
+  position: fixed;
+  background: rgb(248, 248, 248);
+  width: 50%;
+  height: auto;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: modalFadeTop;
+  animation-duration: 0.5s;
+}
+@keyframes modalFadeRight {
+  0% {
+    left: 100%;
+  }
+  50% {
+    right: 50%;
+  }
+}
+
+.right {
+  position: fixed;
+  background: rgb(248, 248, 248);
+  width: 50%;
+  height: auto;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: modalFadeRight;
+  animation-duration: 0.5s;
+}
+@keyframes modalFadeBottom{
+  0% {
+    top: 100%;
+  }
+  50% {
+    bottom: 50;
+  }
+}
+
+.bottom {
+  position: fixed;
+  background: rgb(248, 248, 248);
+  width: 50%;
+  height: auto;
+  padding: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: modalFadeBottom;
+  animation-duration: 0.5s;
+}
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+.header-modal h1 {
+  color: #000;
+  text-align: center;
+  position: relative;
+  left: 35%;
+}
+hr {
+  border-color: #000;
+  background-color: #000;
+  color: #000;
+}
+span {
+  color: red;
+  float: left;
+  cursor: pointer;
+}
+
+.header-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
