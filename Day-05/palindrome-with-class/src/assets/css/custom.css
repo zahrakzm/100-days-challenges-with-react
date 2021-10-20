@@ -1,0 +1,35 @@
+@font-face{
+    font-family:'iranSanse';
+    src: url('../fonts/IranianSans.ttf');
+}
+body{
+    background-color: #09248a
+}
+.box{
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 200px;
+}
+input{
+    outline:0;
+    border-width: 0 0 2px;
+    border-color: #ff8017;
+    display: block;
+    margin:auto;
+    margin-top:100px
+}
+button{
+    margin-top: 100px;
+}
+.flex-area{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 225px;
+}
+.box h3{
+    text-align: center;
+}
