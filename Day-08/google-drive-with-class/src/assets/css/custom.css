@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "openSans", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.homePage {
+  display: flex;
+  flex-direction: row;
+}
+#box {
+  margin: auto;
+  width: 640px;
+  height: 400px;
+  margin-top: 50px;
+}
+#box nav {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+#box nav label {
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 20%;
+  padding: 20px;
+  display: block;
+  height: 100%;
+}
+#box nav label:active{
+  width: 100%;
+}
+#box nav #third-tab{
+  padding-top: 21px;
+}
+
+.span{
+  height: 100%;
+
+}
+
+#embeded-section #pasteLink {
+  display: block;
+}
+#embeded-section #audioLink {
+  display: none;
+}
+#embeded-section #videoLink {
+  display: none;
+}
+.svg-inline--fa {
+  color: chocolate;
+  padding-right: 5px;
+}
+.main-generator {
+  width: 70%;
+}
+.main-generator hr {
+  margin-left: 60px;
+  width: 452px;
+}
+.main-generator h1 {
+  color: #a311a1;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+}
+#embeded-section {
+  border: 2px solid #a311a1;
+}
+
+/* embedded code */
+.embed-code {
+  text-align: center;
+  margin: 20px;
+}
+.embed-code .fa-download,
+.head-phone {
+  font-size: 20px;
+  margin-top: 10px;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 6px;
+  color: chocolate;
+}
+#videoLink .video-icon {
+  font-size: 20px;
+  margin-top: 10px;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 16px;
+  color: chocolate;
+}
+#pasteLink h2 {
+  position: relative;
+  font-size: 20px;
+  line-height: 2;
+}
+#audioLink h2 {
+  position: relative;
+  font-size: 20px;
+  line-height: 2;
+}
+#videoLink h2 {
+  position: relative;
+  font-size: 20px;
+  line-height: 2;
+}
+#pasteLink h2:before {
+  content: "";
+  right: 20%;
+  top: 50%;
+  position: absolute;
+  background-color: #000;
+  width: 10px;
+  height: 1px;
+}
+#pasteLink h2:after {
+  content: "";
+  left: 20%;
+  top: 50%;
+  position: absolute;
+  background-color: #000;
+  width: 10px;
+  height: 1px;
+}
+#audioLink .first-head:before {
+  content: "";
+  right: 20%;
+  top: 50%;
+  position: absolute;
+  background-color: #000;
+  width: 10px;
+  height: 1px;
+}
+#audioLink h2.first-head:after {
+  content: "";
+  left: 20%;
+  top: 50%;
+  position: absolute;
+  background-color: #000;
+  width: 10px;
+  height: 1px;
+}
+#videoLink h2.first-head:before {
+  content: "";
+  right: 20%;
+  top: 50%;
+  position: absolute;
+  background-color: #000;
+  width: 10px;
+  height: 1px;
+}
+#videoLink h2.first-head:after {
+  content: "";
+  left: 20%;
+  top: 50%;
+  position: absolute;
+  background-color: #000;
+  width: 10px;
+  height: 1px;
+}
+.embed-code p {
+  padding-bottom: 10px;
+}
+
+#pastelink form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+}
+#pastelink form label {
+  margin: auto;
+  position: relative;
+}
+#pasteLink form label input {
+  display: block;
+  width: 75%;
+  height: 40px;
+  border: 1px solid transparent;
+  margin-left: 65px;
+  padding-left: 35px;
+  border-radius: 10px 0 10px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: #000;
+  transition: all 0.3s;
+}
+#pasteLink form label input:focus {
+  border-bottom: 2px solid #10b934;
+}
+#pasteLink form label .googelDrive {
+  position: absolute;
+  color: chocolate;
+  left: 38rem;
+  top: 345px;
+}
+.embed-code textarea {
+  width: 100%;
+  width: 82%;
+  margin-left: 20px;
+  outline: none;
+  font-size: 16px;
+  height: 100px;
+  position: relative;
+}
+#embededLink {
+  position: relative;
+}
+.embed-code .copy {
+  position: absolute;
+  background-color: #a311a1;
+  color: #fff;
+  top: 527px;
+  right: 180px;
+  padding: 5px;
+  cursor: pointer;
+}
+.embed-code .copy-audio {
+  position: absolute;
+  background-color: #a311a1;
+  color: #fff;
+  top: 452px;
+  right: 180px;
+  padding: 5px;
+  cursor: pointer;
+}
+.embed-code .copy-video {
+  position: absolute;
+  background-color: #a311a1;
+  color: #fff;
+  top: 491px;
+  right: 180px;
+  padding: 5px;
+  cursor: pointer;
+}
+#btn {
+  color: #fff;
+  width: 82%;
+  margin-left: 20px;
+  height: 35px;
+  background-color: chocolate;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 5px;
+}
+button.clear {
+  background-color: red;
+  width: 82%;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 5px;
+  font-weight: 700;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.active {
+  background-color: #a311a1;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.deactive {
+  background-color: #eee;
+  color: #000;
+}
+#container {
+  height: 15%;
+  overflow: hidden;
+}
