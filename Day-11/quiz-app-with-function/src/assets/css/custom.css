@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+body {
+  font-family: 'openSans', sans-serif;
+  background-color: #09248a;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  margin: auto;
+  margin-top: 7%;
+  border: 3px solid rgb(122 17 181);
+  width: 500px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #eee;
+}
+#container h1{
+    color: #FFF;
+    padding: 10px 0;
+    background-color: rgb(122 17 181);
+    text-align: center;
+    font-size: 30px;
+    height: 45px;
+}
+.header-app{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-app .process{
+  padding: 3%;
+  font-weight: 700;
+  font-size: 15px;
+}
+.header-app .timer{
+  background-color:#fb5b14;
+  color: #FFF;
+  border-radius: 3px;
+  padding: 5px;
+  padding-top:8px;
+  margin-top: 3%;
+  font-weight: 700;
+  font-size: 15px;
+}
+#question{
+  color:#fb5b14;
+  font-weight: 600;
+  font-size:15px;
+  border: 1px solid #777;
+  border-width: 1px 0;
+  padding: 5px 15px;
+  position: relative;
+}
+#question-box{
+  margin: 10px ;
+}
+.btn{
+  text-align: left;
+  background-color: #dedede;
+  border-radius: 3px;
+  border: 1px solid rgb(122 17 181);
+  width: 100%;
+  padding: 10px;
+  margin: 7px 0;
+}
+.btn:hover{
+  background-color:rgb(122 17 181);
+  color:#FFF;
+  cursor: pointer;
+}
+.btn:active{
+  background-color:#fb5b14;
+}
+ #container .maker{
+  text-align: center;
+  padding-top: 3%;
+
+} 
+.score-section{
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  background-color: #eee;
+  margin: auto;
+  margin-top: 15%;
+  border: 3px solid rgb(122 17 181); 
+  position: relative;
+}
+.score-section #score-header{
+  width: 90%;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  color: #FFF;
+  padding-top: 20px;
+  background-color: rgb(122 17 181); 
+}
+.score-section .score-text{
+  text-align: center;
+    font-weight: 700;
+    padding-top: 5%;
+}
+.score-section #quiz-loop{
+  color: #FFF;
+  border: 1px solid rgb(122 17 181);
+  outline: none;
+  padding: 7px;
+  background-color:  rgb(122 17 181); 
+  border-radius: 4px;
+  height: 25px;
+  position: absolute;
+  left: 33%;
+  bottom: 10%;
+  cursor: pointer;
+}
+.score-section #quiz-loop .link{
+  color: #FFF;
+  text-decoration: none;
+}
