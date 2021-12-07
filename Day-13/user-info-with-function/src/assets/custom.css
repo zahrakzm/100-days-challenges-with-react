@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+* {
+  background-color: gainsboro;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+table {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+table td {
+  border: 1px solid #fff;
+
+}
+button{
+  border-radius: 6px;
+    margin: 3%;
+    font-size: 15px;
+    font-weight: 600;
+}
+

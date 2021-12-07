@@ -25,8 +25,8 @@
 /Day-11/quiz-app-with-function/node_modules
 /Day-12/translator-with-class/node_modules
 /Day-12/translator-with-function/node_modules
-
-
+/Day-13/user-info-with-class/node_modules
+/Day-13/user-info-with-function/node_modules
 
 /.pnp
 .pnp.js
