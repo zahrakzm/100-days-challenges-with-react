@@ -1,17 +1,44 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BiWifi, BiWifiOff } from "react-icons/bi";
 import "./assets/custom.css";
 
 const NetStatus = () => {
-  const [status, setStatus] = useState(false);
+  const [isDisconnected, setIsDisconnected] = useState(false);
 
-    setInterval(() => {
-        navigator.onLine ? setStatus(true) : setStatus(false);
-      }, 3000)
+  const handleConnectionChange = () => {
+    const condition = navigator.onLine ? "online" : "offline";
+    if (condition === "online") {
+      const webPing = setInterval(() => {
+        fetch("//google.com", {
+          mode: "no-cors",
+        })
+          .then(() => {
+            setIsDisconnected(false, () => {
+              return clearInterval(webPing);
+            });
+          })
+          .catch(() => setIsDisconnected(true));
+      }, 2000);
+      return;
+    }
+
+    return setIsDisconnected(true);
+  };
+
+  useEffect(() => {
+    handleConnectionChange();
+    window.addEventListener("online", handleConnectionChange);
+    window.addEventListener("offline", handleConnectionChange);
+
+    return () => {
+      window.addEventListener("online", handleConnectionChange);
+      window.addEventListener("offline", handleConnectionChange);
+    };
+  }, [handleConnectionChange]);
 
   return (
     <div>
-      {status ? (
+      {!isDisconnected ? (
         <div className="connected container">
           <BiWifi className="main" />
 

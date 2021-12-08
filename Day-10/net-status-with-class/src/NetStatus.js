@@ -6,20 +6,43 @@ export default class NetStatus extends Component {
   constructor() {
     super();
     this.state = {
-      status: false
+      isDisconnected: false,
     };
   }
-  componentDidMount() {
-    setInterval(() => {
-      navigator.onLine ? this.setState({status:true}) : this.setState({status:false});
-    }, 3000);
-  }
 
+  handleConnectionChange = () => {
+    const condition = navigator.onLine ? "online" : "offline";
+    if (condition === "online") {
+      const webPing = setInterval(() => {
+        fetch("//google.com", {
+          mode: "no-cors",
+        })
+          .then(() => {
+            this.setState({ isDisconnected: false }, () => {
+              return clearInterval(webPing);
+            });
+          })
+          .catch(() => this.setState({ isDisconnected: true }));
+      }, 1000);
+      return;
+    }
+
+    return this.setState({ isDisconnected: true });
+  };
+
+  componentDidMount() {
+    this.handleConnectionChange();
+    window.addEventListener("online", this.handleConnectionChange);
+    window.addEventListener("offline", this.handleConnectionChange);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("online", this.handleConnectionChange);
+    window.removeEventListener("offline", this.handleConnectionChange);
+  }
   render() {
     return (
       <div>
-
-        {this.state.status ? (
+        {!this.state.isDisconnected ? (
           <div className="connected container">
             <BiWifi className="main" />
 
