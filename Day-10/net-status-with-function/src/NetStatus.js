@@ -3,41 +3,43 @@ import { BiWifi, BiWifiOff } from "react-icons/bi";
 import "./assets/custom.css";
 
 const NetStatus = () => {
-  const [isDisconnected, setIsDisconnected] = useState(false);
+const [isDisconnected, setIsDisconnected] = useState(false)
 
-  const handleConnectionChange = () => {
-    const condition = navigator.onLine ? "online" : "offline";
-    if (condition === "online") {
-      const webPing = setInterval(() => {
-        fetch("//google.com", {
-          mode: "no-cors",
-        })
-          .then(() => {
-            setIsDisconnected(false, () => {
-              return clearInterval(webPing);
-            });
+const handleConnectionChange=()=> {
+  const condition = navigator.onLine ? 'online' : 'offline';
+  if (condition === 'online') {
+    const webPing = setInterval(
+      () => {
+        fetch('//google.com', {
+          mode: 'no-cors',
           })
-          .catch(() => setIsDisconnected(true));
+        .then(() => {
+         setIsDisconnected(false, () => {
+            return clearInterval(webPing)
+          });
+        }).catch(() => setIsDisconnected(true) )
       }, 2000);
-      return;
-    }
+    return;
+  }
 
-    return setIsDisconnected(true);
-  };
+  return setIsDisconnected(true);
+}
 
   useEffect(() => {
     handleConnectionChange();
-    window.addEventListener("online", handleConnectionChange);
-    window.addEventListener("offline", handleConnectionChange);
+    window.addEventListener('online', handleConnectionChange);
+    window.addEventListener('offline', handleConnectionChange);
 
     return () => {
-      window.addEventListener("online", handleConnectionChange);
-      window.addEventListener("offline", handleConnectionChange);
-    };
-  }, [handleConnectionChange]);
+      window.addEventListener('online', handleConnectionChange);
+      window.addEventListener('offline', handleConnectionChange);
+    }
+  }, [handleConnectionChange])
+
 
   return (
     <div>
+   
       {!isDisconnected ? (
         <div className="connected container">
           <BiWifi className="main" />
